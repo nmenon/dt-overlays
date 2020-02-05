@@ -1,3 +1,5 @@
+*.dtb
+*.dtb.pre
 *.dtbo
-*.dtso.pre
+*.dtbo.pre
 
