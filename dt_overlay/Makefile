@@ -26,11 +26,8 @@ dtb_src_arm = \
 	dra76-evm.dts
 
 dtb_src_arm += \
-	am43x-epos-evm.dts \
-	am43x-epos-evm-hdmi.dts \
 	am437x-cm-t43.dts \
 	am437x-gp-evm.dts \
-	am437x-gp-evm-hdmi.dts \
 	am437x-idk-evm.dts \
 	am437x-sbc-t43.dts \
 	am437x-sk-evm.dts
