@@ -25,15 +25,21 @@ enviroment variable.
 Command line to build:
 
 		make LINUX=<path to compiled linux kernel>
+
 or
+
 		export LINUX=<path to compiled linux kernel>
+
 		make
 
 Command line to clean:
 
 		make LINUX=<path to compiled linux kernel> clean
+
 or
+
 		export LINUX=<path to compiled linux kernel>
+
 		make clean
 
 DTB output will be contain in the arch/arm/boot/dts/ or arch/arm64/boot/dts/
