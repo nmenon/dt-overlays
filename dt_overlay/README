@@ -1,12 +1,14 @@
 ##################################
 # Introduction
 ##################################
+
 This tool will create compiled device tree files with the overlays within their
 respective directories.
 
 ##################################
 # Pre-Requisites
 ##################################
+
 1.  Upstream kernel is cloned to a local repo.
 2.  Upstream kernel is compiled either from inbox defconfig or through defconfig
 builder.
@@ -14,6 +16,7 @@ builder.
 ##################################
 # Usage
 ##################################
+
 This Makefile depends on the location of the compiled Linux Kernel.
 
 You must set the path to the compiled Linux Kernel by setting the "LINUX="
