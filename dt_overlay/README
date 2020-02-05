@@ -1,0 +1,37 @@
+##################################
+# Introduction
+##################################
+This tool will create compiled device tree files with the overlays within their
+respective directories.
+
+##################################
+# Pre-Requisites
+##################################
+1.  Upstream kernel is cloned to a local repo.
+2.  Upstream kernel is compiled either from inbox defconfig or through defconfig
+builder.
+
+##################################
+# Usage
+##################################
+This Makefile depends on the location of the compiled Linux Kernel.
+
+You must set the path to the compiled Linux Kernel by setting the "LINUX="
+enviroment variable.
+
+Command line to build:
+
+		make LINUX=<path to compiled linux kernel>
+or
+		export LINUX=<path to compiled linux kernel>
+		make
+
+Command line to clean:
+
+		make LINUX=<path to compiled linux kernel> clean
+or
+		export LINUX=<path to compiled linux kernel>
+		make clean
+
+DTB output will be contain in the arch/arm/boot/dts/ or arch/arm64/boot/dts/
+directories.

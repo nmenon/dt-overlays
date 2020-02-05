@@ -1,0 +1,29 @@
+##################################
+# Introduction
+##################################
+This repo is meant to contain tools that allow TI to customize the upstream
+main line source code.  This repo is not meant for public access as if public
+access is required then the tool should be applied in a different repo.
+
+##################################
+# Process
+##################################
+In order to patch this repo please follow this process:
+
+1.  Fork the repo into your own project
+2.  Create your change
+3.  Submit PR to Bitbucket citing your repo/branch to be pulled
+4.  Add relevant reviewers to your PR
+5.  Wait for review for at least 24-48 hours
+6.  If changes are requested then make the changes on your repo/branch and
+re-submit your PR.
+7.  If update PR then go back to 5.  If accepted request for integration from
+a maintainer.
+
+##################################
+# Tools available
+##################################
+1. DT Overlay compiler - Compiles DT overlays into dtb files for test
+2. Defconfig builder - This is a copy of the defconfig builder and the config
+fragments from the productized kernel.  The config fragments are for upstream
+kernel application.
