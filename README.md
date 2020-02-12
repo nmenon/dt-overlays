@@ -16,7 +16,7 @@ This is just a demo of a concept.  It uses TI's overlays as an example.
 
 The idea is to have SOC and common board dt source in the kernel.
 Daughter card overlays and other bootloader applied overlays will be kept here
-as the kernel does not want them until the bigger issues around overlays are 
+as the kernel does not want them until the bigger issues around overlays are
 solved.
 
 TI's usage of overlays is bootloader applied.  Overlays applied by the kernel
@@ -26,18 +26,18 @@ The Makefile definitly needs work
 v0.1:
 The first version only built the dtbo's here and relied on the base dtb's to be
 built by the kernel.  However to support overlays the dtb's have to be built
-with symbol support so the user must define DTC_FLAGS=-@ when building the 
+with symbol support so the user must define DTC_FLAGS=-@ when building the
 kernel
 
 v0.2:
-Builds the dtb's and dtbo's from this makefile.  The source for the dtbs is 
+Builds the dtb's and dtbo's from this makefile.  The source for the dtbs is
 still from the kernel.  However this Makefile is messy and TI specific.
 
 v0.3: (does not exist yet)
-This makefile should basicly be similar to an out of tree module.  It should 
+This makefile should basicly be similar to an out of tree module.  It should
 require that the kernel be already built and should reuse the config used to
 control what portions of this tree are used.  (The "kernel dir" needed will be
-the output directory not the source directory; just like a oot module.) 
+the output directory not the source directory; just like a oot module.)
 
 ##################################
 # Poor Man's Demo
@@ -83,6 +83,6 @@ arch/arm/boot/dts/ti/ov10635.dtso:54.8-61.3: Warning (graph_port): /fragment@1/_
   DTC arch/arm/boot/dts/ti/dra71-evm-lcd-auo-g101evn01.0.dtbo
   DTC arch/arm/boot/dts/ti/dra72-evm-touchscreen.dtbo
   DTC arch/arm/boot/dts/ti/am57xx-evm.dtbo
-bill@m:~/w/demo/dt-overlays/dt_overlay$ 
+bill@m:~/w/demo/dt-overlays/dt_overlay$
 
 
