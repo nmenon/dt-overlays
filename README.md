@@ -1,16 +1,12 @@
-##################################
 # Introduction
-##################################
 
 This repo is meant to contain device tree source files that are not appropriate
 for inclusion in the linux kernel.
 
 Today this means overlays.
-See the dt_overlay/README for current usage
+See the dt\_overlay/README for current usage
 
-##################################
 # Status
-##################################
 
 This is just a demo of a concept.  It uses TI's overlays as an example.
 
@@ -26,7 +22,7 @@ The Makefile definitly needs work
 v0.1:
 The first version only built the dtbo's here and relied on the base dtb's to be
 built by the kernel.  However to support overlays the dtb's have to be built
-with symbol support so the user must define DTC_FLAGS=-@ when building the
+with symbol support so the user must define DTC\_FLAGS=-@ when building the
 kernel
 
 v0.2:
@@ -39,10 +35,9 @@ require that the kernel be already built and should reuse the config used to
 control what portions of this tree are used.  (The "kernel dir" needed will be
 the output directory not the source directory; just like a oot module.)
 
-##################################
 # Poor Man's Demo
-##################################
 
+```
 bill@m:~/w/demo/dt-overlays/dt_overlay$ LINUX=../../korg-master DTC=../../build/korg-master/armv7/scripts/dtc/dtc make
   DTC arch/arm/boot/dts/am57xx-beagle-x15.dtb
   DTC arch/arm/boot/dts/am57xx-beagle-x15-revb1.dtb
@@ -84,5 +79,4 @@ arch/arm/boot/dts/ti/ov10635.dtso:54.8-61.3: Warning (graph_port): /fragment@1/_
   DTC arch/arm/boot/dts/ti/dra72-evm-touchscreen.dtbo
   DTC arch/arm/boot/dts/ti/am57xx-evm.dtbo
 bill@m:~/w/demo/dt-overlays/dt_overlay$
-
-
+```
